@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameFinish : MonoBehaviour
 {
-        private bool levelCompleted = false;
+    [SerializeField] private AudioSource CompleteLevelSoundEffect;
+    private bool levelCompleted = false;
 
       private void OnTriggerEnter(Collider collision)
     {
@@ -13,7 +14,7 @@ public class GameFinish : MonoBehaviour
         {
             
             levelCompleted = true;
-            Invoke("CompleteLevel", 0.2f);
+            Invoke("CompleteLevel", 10f);
 
         }
         
@@ -22,7 +23,7 @@ public class GameFinish : MonoBehaviour
 
     private void CompleteLevel ()
     {
-
+        CompleteLevelSoundEffect.Play();
         SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex +1);
     }
 }
