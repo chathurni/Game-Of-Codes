@@ -14,6 +14,7 @@ public class CollectGem : MonoBehaviour
     [SerializeField] private AudioSource RgemCollectSoundEffect;
     [SerializeField] private AudioSource GgemCollectSoundEffect;
     [SerializeField] private AudioSource BgemCollectSoundEffect;
+    [SerializeField] private AudioSource ResetSoundEffect;
 
 
     private void Start()
@@ -33,6 +34,7 @@ public class CollectGem : MonoBehaviour
     
     public void Reset()
     {
+        ResetSoundEffect.Play();
         PlayerPrefs.DeleteAll();
         bestScore.text = "0";
 
