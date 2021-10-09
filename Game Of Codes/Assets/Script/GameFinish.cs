@@ -14,6 +14,7 @@ public class GameFinish : MonoBehaviour
             
             levelCompleted = true;
             Invoke("CompleteLevel", 0.2f);
+            
 
         }
         
@@ -24,5 +25,7 @@ public class GameFinish : MonoBehaviour
     {
 
         SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex +1);
+        
+        
     }
 }

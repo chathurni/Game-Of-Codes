@@ -22,18 +22,23 @@ public class CollectGem : MonoBehaviour
         {
             PlayerPrefs.SetInt("bestScore", score);
             bestScore.text = score.ToString();
+
+
         }
         
     }
+
     
     public void Reset()
     {
         PlayerPrefs.DeleteAll();
         bestScore.text = "0";
+        
+        
+        
 
 
-
-    }
+   }
 
     private void OnTriggerEnter(Collider collision)
     {
