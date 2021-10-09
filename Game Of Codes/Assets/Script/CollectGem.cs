@@ -7,6 +7,7 @@ public class CollectGem : MonoBehaviour
 {
     public int score;
     public Text scoreText;
+    public Text highScore;
 
     private void OnTriggerEnter(Collider collision)
     {
