@@ -28,8 +28,6 @@ public class CollectGem : MonoBehaviour
         {
             PlayerPrefs.SetInt("bestScore", score);
             bestScore.text = score.ToString();
-
-
             
         }
         
@@ -41,9 +39,18 @@ public class CollectGem : MonoBehaviour
         ResetSoundEffect.Play();
         PlayerPrefs.DeleteAll();
 
-        bestScore.text = "Best Score : " + 0.ToString();
+
+        
+
+        bestScore.text = "Best Score : 0";
 
 
+    }
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+        PlayerPrefs.DeleteAll();
     }
 
     private void OnTriggerEnter(Collider collision)
