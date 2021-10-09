@@ -8,6 +8,8 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPause = false;
 
     public GameObject pauseMenuUI;
+    [SerializeField] private AudioSource PauseSoundEffect;
+
 
 
     // Update is called once per frame
@@ -15,6 +17,7 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            PauseSoundEffect.Play();
             if (GameIsPause)
             {
                 Resume ();
