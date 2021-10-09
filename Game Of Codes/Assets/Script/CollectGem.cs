@@ -41,7 +41,7 @@ public class CollectGem : MonoBehaviour
         ResetSoundEffect.Play();
         PlayerPrefs.DeleteAll();
 
-        bestScore.text = "Best Score : " + bestScore.ToString();
+        bestScore.text = "Best Score : " + 0.ToString();
 
 
     }
