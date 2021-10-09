@@ -18,27 +18,26 @@ public class CollectGem : MonoBehaviour
 
     private void Update()
     {
-        if(score > PlayerPrefs.GetInt("bestScore", 0))
+        if (score > PlayerPrefs.GetInt("bestScore", 0))
         {
             PlayerPrefs.SetInt("bestScore", score);
             bestScore.text = score.ToString();
 
 
+            
         }
         
+
     }
 
-    
     public void Reset()
     {
         PlayerPrefs.DeleteAll();
-        bestScore.text = "0";
-        
-        
-        
+
+        bestScore.text = "Best Score : " + bestScore.ToString();
 
 
-   }
+    }
 
     private void OnTriggerEnter(Collider collision)
     {
