@@ -6,7 +6,7 @@ Avatar:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RFA_Model_Avatar
+  m_Name: player_Model_Avatar
   m_AvatarSize: 15616
   m_Avatar:
     serializedVersion: 3
