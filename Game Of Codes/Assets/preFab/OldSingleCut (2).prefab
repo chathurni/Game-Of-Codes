@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2423755241549421973}
   - component: {fileID: 2423755241549421974}
   - component: {fileID: 5910137576715742289}
+  - component: {fileID: 891839294024390897}
   m_Layer: 0
   m_Name: OldSingleCut (2)
   m_TagString: Untagged
@@ -26,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2423755241549421968}
-  m_LocalRotation: {x: -0.7071031, y: -0.0022930412, z: 0.0076417923, w: 0.7070655}
+  m_LocalRotation: {x: -0.70710677, y: 0, z: 0, w: 0.70710677}
   m_LocalPosition: {x: 2.5203853, y: 1.6436105, z: 2.374573}
   m_LocalScale: {x: 19.163416, y: 19.16342, z: 19.163418}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: -90, z: 90}
 --- !u!33 &2423755241549421973
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -95,3 +96,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0368888, y: 0.036888808, z: 0.030128704}
   m_Center: {x: 2.8503382e-11, y: 0.00000001490121, z: -0.015064337}
+--- !u!95 &891839294024390897
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2423755241549421968}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 345778cc15fa05242b8567a4c676c56f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
