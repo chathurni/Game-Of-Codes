@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class CollectGem : MonoBehaviour
+public class Level2Collect : MonoBehaviour
 {
+    int highscore = 0;
     int score = 0;
-    int bestscore = 0;
 
     public Text scoreText;
     public Text bestScore;
@@ -20,21 +20,23 @@ public class CollectGem : MonoBehaviour
 
     private void Start()
     {
-        score = 0;
+        highscore = PlayerPrefs.GetInt("bestScore");
+        score = PlayerPrefs.GetInt("yourscore");
+
+
     }
 
     private void Update()
     {
-        if (score > PlayerPrefs.GetInt("bestScore"))
+        if (score > highscore)
         {
             PlayerPrefs.SetInt("bestScore", score);
             bestScore.text = score.ToString();
-            
 
         }
         else
         {
-            PlayerPrefs.SetInt("yourscore", score);
+            PlayerPrefs.SetInt("finalyourscore", score);
         }
 
 
@@ -44,6 +46,8 @@ public class CollectGem : MonoBehaviour
     {
         ResetSoundEffect.Play();
         PlayerPrefs.DeleteAll();
+
+
     }
 
     private void OnTriggerEnter(Collider collision)
