@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Level2Collect : MonoBehaviour
 {
+    int highscore = 0;
     int score = 0;
 
     public Text scoreText;
@@ -19,17 +20,23 @@ public class Level2Collect : MonoBehaviour
 
     private void Start()
     {
-        score = PlayerPrefs.GetInt("bestScore");
+        highscore = PlayerPrefs.GetInt("bestScore");
+        score = PlayerPrefs.GetInt("yourscore");
+
+
     }
 
     private void Update()
     {
-        if (score > PlayerPrefs.GetInt("bestScore", 0))
+        if (score > highscore)
         {
             PlayerPrefs.SetInt("bestScore", score);
             bestScore.text = score.ToString();
 
-
+        }
+        else
+        {
+            PlayerPrefs.SetInt("finalyourscore", score);
         }
 
 

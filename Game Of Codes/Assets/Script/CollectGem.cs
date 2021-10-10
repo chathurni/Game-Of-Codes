@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class CollectGem : MonoBehaviour
 {
     int score = 0;
+    int bestscore = 0;
 
     public Text scoreText;
     public Text bestScore;
@@ -24,13 +25,18 @@ public class CollectGem : MonoBehaviour
 
     private void Update()
     {
-        if (score > PlayerPrefs.GetInt("bestScore", 0))
+        if (score > PlayerPrefs.GetInt("bestScore"))
         {
             PlayerPrefs.SetInt("bestScore", score);
             bestScore.text = score.ToString();
+            
 
         }
-        
+        else
+        {
+            PlayerPrefs.SetInt("yourscore", score);
+        }
+
 
     }
 
