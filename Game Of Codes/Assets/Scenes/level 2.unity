@@ -86241,6 +86241,10 @@ PrefabInstance:
       propertyPath: gravity
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 1954679108368292101, guid: 578618275a89cb2438ae2391010373cc, type: 3}
+      propertyPath: jumpSpeed
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 1954679108368292218, guid: 578618275a89cb2438ae2391010373cc, type: 3}
       propertyPath: m_Enabled
       value: 1
