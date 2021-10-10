@@ -13,6 +13,7 @@ public class MenuControl : MonoBehaviour
     void Start()
     {
         BestScore.text = "Best Score : " + PlayerPrefs.GetInt("bestScore");
+        Debug.Log(PlayerPrefs.GetInt("bestScore"));
     }
 
     

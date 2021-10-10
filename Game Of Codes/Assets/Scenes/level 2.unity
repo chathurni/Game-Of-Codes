@@ -14023,14 +14023,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 315822677}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e82fe2f21968ed449da35c977d180b1, type: 3}
+  m_Script: {fileID: 11500000, guid: eb6865c025c932148b43bde4fa41ee79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 1653671484}
+  scoreText: {fileID: 0}
   bestScore: {fileID: 0}
-  RgemCollectSoundEffect: {fileID: 315822679}
-  GgemCollectSoundEffect: {fileID: 315822679}
-  BgemCollectSoundEffect: {fileID: 315822679}
+  RgemCollectSoundEffect: {fileID: 0}
+  GgemCollectSoundEffect: {fileID: 0}
+  BgemCollectSoundEffect: {fileID: 0}
   ResetSoundEffect: {fileID: 0}
 --- !u!82 &315822679
 AudioSource:

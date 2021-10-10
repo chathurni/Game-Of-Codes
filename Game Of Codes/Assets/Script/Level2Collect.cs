@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class CollectGem : MonoBehaviour
+public class Level2Collect : MonoBehaviour
 {
     int score = 0;
 
@@ -19,7 +19,7 @@ public class CollectGem : MonoBehaviour
 
     private void Start()
     {
-        score = 0;
+        score = PlayerPrefs.GetInt("bestScore");
     }
 
     private void Update()
@@ -29,8 +29,9 @@ public class CollectGem : MonoBehaviour
             PlayerPrefs.SetInt("bestScore", score);
             bestScore.text = score.ToString();
 
+
         }
-        
+
 
     }
 
@@ -38,6 +39,8 @@ public class CollectGem : MonoBehaviour
     {
         ResetSoundEffect.Play();
         PlayerPrefs.DeleteAll();
+
+
     }
 
     private void OnTriggerEnter(Collider collision)
