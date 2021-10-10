@@ -14,7 +14,7 @@ public class GameFinish : MonoBehaviour
         {
             
             levelCompleted = true;
-            Invoke("CompleteLevel", 10f);
+            Invoke("CompleteLevel", 0.5f);
 
         }
         
