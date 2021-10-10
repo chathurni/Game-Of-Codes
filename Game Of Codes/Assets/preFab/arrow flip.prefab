@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2880263696331641751}
   - component: {fileID: 2880263696331641750}
   m_Layer: 0
-  m_Name: arrow 2
+  m_Name: arrow flip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
