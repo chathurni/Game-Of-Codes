@@ -13,6 +13,8 @@ public class EndMenu : MonoBehaviour
         Application.Quit();
         Debug.Log ("Game quit");
 
+
+        
     }
 
 }
